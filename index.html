@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicholas Huba — Information Architect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #F7F7F5; --surface: #FFFFFF; --ink: #111111; --ink-2: #444444;
+    --ink-3: #888888; --accent: #4A6FA5; --accent-light: #EAF0F8;
+    --rule: #E2E2DE; --radius: 6px; --max: 880px;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--ink); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
+  nav { border-bottom: 1px solid var(--rule); padding: 1.1rem 0; position: sticky; top: 0; background: rgba(247,247,245,0.92); backdrop-filter: blur(8px); z-index: 100; }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; }
+  .nav-name { font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: var(--ink); }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { color: var(--ink-2); font-size: 0.875rem; font-weight: 500; }
+  .hero { padding: 5rem 0 4rem; }
+  .hero-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
+  .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.8rem, 6vw, 4rem); line-height: 1.1; color: var(--ink); margin-bottom: 1.5rem; }
+  .hero-thesis { font-size: 1.1rem; line-height: 1.7; color: var(--ink-2); max-width: 560px; border-left: 3px solid var(--accent); padding-left: 1.25rem; margin-bottom: 2.5rem; }
+  .hero-meta { display: flex; gap: 2rem; flex-wrap: wrap; }
+  .hero-meta span { font-size: 0.875rem; color: var(--ink-3); }
+  .hero-meta strong { color: var(--ink-2); }
+  .section-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 2rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--rule); }
+  .cards-section { padding: 3rem 0; }
+  .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .case-card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 1.5rem; cursor: pointer; transition: border-color 0.15s, transform 0.15s; text-decoration: none; display: block; color: inherit; }
+  .case-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
+  .card-num { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; color: var(--accent); text-transform: uppercase; margin-bottom: 0.75rem; }
+  .card-title { font-family: 'DM Serif Display', serif; font-size: 1.1rem; line-height: 1.3; color: var(--ink); margin-bottom: 0.75rem; }
+  .card-problem { font-size: 0.825rem; color: var(--ink-3); line-height: 1.5; margin-bottom: 1.25rem; }
+  .card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag { font-size: 0.7rem; font-weight: 500; padding: 0.25rem 0.6rem; border-radius: 3px; background: var(--accent-light); color: var(--accent); }
+  .card-cta { margin-top: 1.25rem; font-size: 0.8rem; font-weight: 600; color: var(--accent); }
+  .case-section { padding: 4rem 0; border-top: 1px solid var(--rule); scroll-margin-top: 60px; }
+  .cs-header { margin-bottom: 3rem; }
+  .cs-num { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+  .cs-title { font-family: 'DM Serif Display', serif; font-size: 2rem; line-height: 1.2; margin-bottom: 0.75rem; }
+  .cs-sub { font-size: 0.875rem; color: var(--ink-3); }
+  .cs-body { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+  .cs-col-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 1rem; }
+  .cs-col h4 { font-size: 0.9rem; font-weight: 600; color: var(--ink); margin-bottom: 0.3rem; margin-top: 1rem; }
+  .cs-col h4:first-of-type { margin-top: 0; }
+  .cs-col p { font-size: 0.875rem; color: var(--ink-2); line-height: 1.6; margin-bottom: 0.5rem; }
+  .cs-col ol { padding-left: 1.25rem; }
+  .cs-col li { font-size: 0.875rem; color: var(--ink-2); line-height: 1.6; margin-bottom: 0.4rem; }
+  .insight-box { background: var(--accent-light); border-left: 3px solid var(--accent); padding: 1rem 1.25rem; border-radius: 0 var(--radius) var(--radius) 0; margin-top: 2rem; }
+  .insight-box .label { font-size: 0.75rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.35rem; }
+  .insight-box p { font-size: 0.875rem; color: var(--ink-2); line-height: 1.6; }
+  .diagram-wrap { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 2rem; margin-top: 2.5rem; }
+  .diagram-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 1.5rem; }
+  svg text { font-family: 'Inter', sans-serif; }
+  .process-section { padding: 4rem 0; border-top: 1px solid var(--rule); }
+  .process-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .process-item { margin-bottom: 1.75rem; }
+  .process-item h4 { font-size: 0.9rem; font-weight: 600; color: var(--ink); margin-bottom: 0.35rem; }
+  .process-item p { font-size: 0.875rem; color: var(--ink-2); line-height: 1.6; }
+  .skills-list { display: flex; flex-direction: column; gap: 0.5rem; }
+  .skill-row { display: flex; align-items: center; gap: 0.75rem; font-size: 0.875rem; color: var(--ink-2); }
+  .skill-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+  footer { border-top: 1px solid var(--rule); padding: 3rem 0; margin-top: 2rem; }
+  .footer-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .footer-name { font-family: 'DM Serif Display', serif; font-size: 1.4rem; margin-bottom: 0.5rem; }
+  .footer-contact { font-size: 0.875rem; color: var(--ink-2); line-height: 1.8; }
+  .disclaimer { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); font-size: 0.775rem; color: var(--ink-3); line-height: 1.6; }
+  @media (max-width: 680px) {
+    .cards-grid, .cs-body, .process-grid, .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .hero h1 { font-size: 2.4rem; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <span class="nav-name">Nicholas Huba</span>
+    <div class="nav-links">
+      <a href="#case-studies">Work</a>
+      <a href="#process">Approach</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-eyebrow">Senior UX Designer &amp; Information Architect</div>
+      <h1>Structure before aesthetics.<br>Diagnosis before design.</h1>
+      <p class="hero-thesis">A perfectly good solution gets built for the wrong problem more often than anyone admits. I work at the layer where that goes wrong — surfacing what the problem actually is before anyone opens a design tool.</p>
+      <div class="hero-meta">
+        <span><strong>12+ years</strong> enterprise UX &amp; IA</span>
+        <span><strong>General Motors IT</strong> (2013–2025)</span>
+        <span><strong>MLIS</strong> — UT Austin</span>
+        <span><strong>Austin, TX</strong> · Open to remote</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards-section" id="case-studies">
+    <div class="wrap">
+      <div class="section-label">Case studies</div>
+      <div class="cards-grid">
+        <a class="case-card" href="#edr">
+          <div class="card-num">Case study 01</div>
+          <div class="card-title">Enterprise Data Discovery Platform</div>
+          <div class="card-problem">Finding data took days. ETL, governance, and BI teams each kept separate catalogs. Nobody knew what existed or how to get it.</div>
+          <div class="card-tags"><span class="tag">Information architecture</span><span class="tag">Taxonomy</span><span class="tag">Enterprise search</span></div>
+          <div class="card-cta">View case study →</div>
+        </a>
+        <a class="case-card" href="#devsecops">
+          <div class="card-num">Case study 02</div>
+          <div class="card-title">DevSecOps Compliance Platform</div>
+          <div class="card-problem">Review board prep was manual and slow. Compliance docs lived in isolation from the deployments they were supposed to gate.</div>
+          <div class="card-tags"><span class="tag">IA &amp; data modeling</span><span class="tag">Workflow design</span><span class="tag">Compliance UX</span></div>
+          <div class="card-cta">View case study →</div>
+        </a>
+        <a class="case-card" href="#prf">
+          <div class="card-num">Case study 03</div>
+          <div class="card-title">Product Resource Forecasting</div>
+          <div class="card-problem">Headcount planning ran on static spreadsheets. Finance, HR, and product leads each worked from different versions with no shared reconciliation point.</div>
+          <div class="card-tags"><span class="tag">UX strategy</span><span class="tag">Decision support</span><span class="tag">Data modeling</span></div>
+          <div class="card-cta">View case study →</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section" id="edr">
+    <div class="wrap">
+      <div class="cs-header">
+        <div class="cs-num">Case study 01</div>
+        <h2 class="cs-title">Enterprise Data Discovery Platform</h2>
+        <div class="cs-sub">General Motors IT · Information Architecture &amp; UX Lead</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-col">
+          <div class="cs-col-label">The problem</div>
+          <h4>No single view of enterprise data assets</h4>
+          <p>ETL, storage, governance, and BI teams each maintained separate catalogs with no cross-team visibility. Finding a dataset meant knowing the right person to ask.</p>
+          <h4>Finding data took days or weeks</h4>
+          <p>Users relied on word-of-mouth. When people left, the knowledge went with them.</p>
+          <h4>Access control complicated discovery</h4>
+          <p>Search results had to respect data security tiers — Sarbanes-Oxley, PII, HR, R&amp;D — without exposing the existence of assets a user wasn't permitted to see.</p>
+        </div>
+        <div class="cs-col">
+          <div class="cs-col-label">Role &amp; outcomes</div>
+          <ol>
+            <li>Led IA and UX for the full platform — taxonomy design, metadata standards, search architecture, and access-aware UI</li>
+            <li>Reduced data discovery from days or weeks to minutes for thousands of global users</li>
+            <li>Coordinated metadata collection across ETL, governance, BI, and cloud storage teams</li>
+            <li>Implemented security-aware search: results filtered by user permissions without revealing restricted assets exist</li>
+          </ol>
+        </div>
+      </div>
+      <div class="diagram-wrap">
+        <div class="diagram-label">Domain model — core object relationships</div>
+        <svg viewBox="0 0 800 320" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#4A6FA5"/></marker>
+            <marker id="ahd" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#888"/></marker>
+          </defs>
+          <rect x="320" y="120" width="160" height="60" rx="5" fill="#4A6FA5"/>
+          <text x="400" y="147" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Dataset</text>
+          <text x="400" y="165" text-anchor="middle" fill="#C5D5EA" font-size="10">metadata · schema · access tier</text>
+          <rect x="60" y="40" width="160" height="52" rx="5" fill="#EAF0F8" stroke="#4A6FA5" stroke-width="1"/>
+          <text x="140" y="62" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Source System</text>
+          <text x="140" y="80" text-anchor="middle" fill="#4A6FA5" font-size="10">origin · ETL pipeline</text>
+          <rect x="580" y="40" width="160" height="52" rx="5" fill="#EAF0F8" stroke="#4A6FA5" stroke-width="1"/>
+          <text x="660" y="62" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Business Project</text>
+          <text x="660" y="80" text-anchor="middle" fill="#4A6FA5" font-size="10">owner · domain · purpose</text>
+          <rect x="60" y="228" width="160" height="52" rx="5" fill="#EAF0F8" stroke="#4A6FA5" stroke-width="1"/>
+          <text x="140" y="250" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Team / Steward</text>
+          <text x="140" y="268" text-anchor="middle" fill="#4A6FA5" font-size="10">permissions · governance</text>
+          <rect x="580" y="228" width="160" height="52" rx="5" fill="#EAF0F8" stroke="#4A6FA5" stroke-width="1"/>
+          <text x="660" y="250" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">BI Report</text>
+          <text x="660" y="268" text-anchor="middle" fill="#4A6FA5" font-size="10">consumes datasets</text>
+          <line x1="220" y1="75" x2="318" y2="138" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah)"/>
+          <text x="252" y="96" fill="#888" font-size="10" transform="rotate(-32 252 96)">originates</text>
+          <line x1="480" y1="138" x2="578" y2="75" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah)"/>
+          <text x="510" y="96" fill="#888" font-size="10" transform="rotate(32 530 104)">used by</text>
+          <line x1="480" y1="162" x2="578" y2="242" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah)"/>
+          <text x="512" y="210" fill="#888" font-size="10" transform="rotate(-32 528 208)">powers</text>
+          <line x1="220" y1="245" x2="318" y2="162" stroke="#888" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ahd)"/>
+          <text x="230" y="195" fill="#888" font-size="10" transform="rotate(32 230 195)">stewards</text>
+        </svg>
+        <div class="insight-box">
+          <div class="label">Key IA challenge</div>
+          <p>Search results had to be access-aware — returning only what a user was permitted to see, without revealing that restricted assets existed at all.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section" id="devsecops">
+    <div class="wrap">
+      <div class="cs-header">
+        <div class="cs-num">Case study 02</div>
+        <h2 class="cs-title">DevSecOps Compliance Platform</h2>
+        <div class="cs-sub">General Motors IT · UX &amp; Information Architecture</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-col">
+          <div class="cs-col-label">The problem</div>
+          <h4>Fragmented tooling</h4>
+          <p>Testing, deployment status, and milestone tracking lived in separate systems. No single view of where a deployment stood in the pipeline.</p>
+          <h4>Review board prep was manual and slow</h4>
+          <p>PMs assembled compliance packages by hand before each review meeting. Backout plans, contact info, and sign-offs existed in isolation from the deployments they governed.</p>
+          <h4>Compliance docs were orphaned from deployments</h4>
+          <p>Each gate required specific documentation, but there was no structural link between the docs and the gate — or the deployment.</p>
+        </div>
+        <div class="cs-col">
+          <div class="cs-col-label">Role &amp; outcomes</div>
+          <ol>
+            <li>Designed the unified platform IA — staged pipeline model, gate structure, and compliance doc linkage</li>
+            <li>Eliminated manual review board prep: PMs no longer assembled compliance packages by hand</li>
+            <li>Gave compliance reviewers a single view of each deployment's status, linked docs, and QA results</li>
+            <li>Platform became the operational standard for DevSecOps workflow tracking across GM IT</li>
+          </ol>
+        </div>
+      </div>
+      <div class="diagram-wrap">
+        <div class="diagram-label">Information architecture — staged deployment pipeline</div>
+        <svg viewBox="0 0 800 300" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs><marker id="ah2" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#4A6FA5"/></marker></defs>
+          <rect x="20" y="50" width="140" height="52" rx="5" fill="#4A6FA5"/>
+          <text x="90" y="73" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">DEV</text>
+          <text x="90" y="91" text-anchor="middle" fill="#C5D5EA" font-size="10">environment</text>
+          <line x1="160" y1="76" x2="200" y2="76" stroke="#4A6FA5" stroke-width="2" marker-end="url(#ah2)"/>
+          <rect x="200" y="40" width="120" height="72" rx="4" fill="#EAF0F8" stroke="#4A6FA5" stroke-width="1.5"/>
+          <text x="260" y="68" text-anchor="middle" fill="#2A4A7A" font-size="11" font-weight="600">Review Board</text>
+          <text x="260" y="84" text-anchor="middle" fill="#4A6FA5" font-size="10">Gate 1</text>
+          <text x="260" y="100" text-anchor="middle" fill="#888" font-size="9">Dev → Test</text>
+          <line x1="320" y1="76" x2="360" y2="76" stroke="#4A6FA5" stroke-width="2" marker-end="url(#ah2)"/>
+          <rect x="360" y="50" width="140" height="52" rx="5" fill="#4A6FA5"/>
+          <text x="430" y="73" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">TEST</text>
+          <text x="430" y="91" text-anchor="middle" fill="#C5D5EA" font-size="10">environment</text>
+          <line x1="500" y1="76" x2="540" y2="76" stroke="#4A6FA5" stroke-width="2" marker-end="url(#ah2)"/>
+          <rect x="540" y="40" width="120" height="72" rx="4" fill="#EAF0F8" stroke="#4A6FA5" stroke-width="1.5"/>
+          <text x="600" y="68" text-anchor="middle" fill="#2A4A7A" font-size="11" font-weight="600">Review Board</text>
+          <text x="600" y="84" text-anchor="middle" fill="#4A6FA5" font-size="10">Gate 2 (Final)</text>
+          <text x="600" y="100" text-anchor="middle" fill="#888" font-size="9">Test → Prod</text>
+          <line x1="660" y1="76" x2="700" y2="76" stroke="#4A6FA5" stroke-width="2" marker-end="url(#ah2)"/>
+          <rect x="700" y="50" width="80" height="52" rx="5" fill="#4A6FA5"/>
+          <text x="740" y="73" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">PROD</text>
+          <text x="740" y="91" text-anchor="middle" fill="#C5D5EA" font-size="10">live</text>
+          <line x1="260" y1="112" x2="260" y2="148" stroke="#aaa" stroke-width="1" stroke-dasharray="3 2"/>
+          <rect x="170" y="148" width="180" height="84" rx="4" fill="#F7F7F5" stroke="#E2E2DE" stroke-width="1"/>
+          <text x="260" y="168" text-anchor="middle" fill="#444" font-size="10" font-weight="600">Required for Gate 1</text>
+          <text x="260" y="186" text-anchor="middle" fill="#666" font-size="10">· Architecture diagrams</text>
+          <text x="260" y="202" text-anchor="middle" fill="#666" font-size="10">· Access permissions</text>
+          <text x="260" y="218" text-anchor="middle" fill="#666" font-size="10">· Dependencies documented</text>
+          <line x1="600" y1="112" x2="600" y2="148" stroke="#aaa" stroke-width="1" stroke-dasharray="3 2"/>
+          <rect x="510" y="148" width="180" height="84" rx="4" fill="#F7F7F5" stroke="#E2E2DE" stroke-width="1"/>
+          <text x="600" y="168" text-anchor="middle" fill="#444" font-size="10" font-weight="600">Required for Gate 2</text>
+          <text x="600" y="186" text-anchor="middle" fill="#666" font-size="10">· Backout plan</text>
+          <text x="600" y="202" text-anchor="middle" fill="#666" font-size="10">· UAT sign-off</text>
+          <text x="600" y="218" text-anchor="middle" fill="#666" font-size="10">· End-user help documentation</text>
+        </svg>
+        <div class="insight-box">
+          <div class="label">Key design problem</div>
+          <p>Each gate's required docs lived in separate systems with no structural link to the deployment or gate they governed. The platform made those relationships explicit and navigable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section" id="prf">
+    <div class="wrap">
+      <div class="cs-header">
+        <div class="cs-num">Case study 03</div>
+        <h2 class="cs-title">Product Resource Forecasting</h2>
+        <div class="cs-sub">General Motors IT · UX Strategy &amp; IA</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-col">
+          <div class="cs-col-label">The problem</div>
+          <h4>Planning ran on static spreadsheets</h4>
+          <p>Headcount and resource needs were projected manually, with no way to model multiple scenarios or compare assumptions.</p>
+          <h4>Decision-makers had no shared view</h4>
+          <p>Finance, HR, and product leaders each worked from different versions of headcount data with no reconciliation point.</p>
+          <h4>Scenarios couldn't be compared</h4>
+          <p>Leadership needed to evaluate multiple forecast models side-by-side, but the platform had to surface the right scenario at the right decision point.</p>
+        </div>
+        <div class="cs-col">
+          <div class="cs-col-label">Role &amp; outcomes</div>
+          <ol>
+            <li>Designed UX for scenario input, filtering, and comparison views used by finance and product leadership</li>
+            <li>Defined the IA connecting prediction model outputs to filterable, role-appropriate scenario lists</li>
+            <li>Replaced manual spreadsheet planning with a shared, real-time view reconciling Finance, HR, and product inputs</li>
+            <li>Reduced scenario review prep time; enabled leadership to evaluate forecasts side-by-side in a single session</li>
+          </ol>
+        </div>
+      </div>
+      <div class="diagram-wrap">
+        <div class="diagram-label">User decision flow — submit · filter · select scenario</div>
+        <svg viewBox="0 0 800 220" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs><marker id="ah3" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#4A6FA5"/></marker></defs>
+          <rect x="10" y="20" width="165" height="48" rx="5" fill="#4A6FA5"/>
+          <text x="93" y="41" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">1. Submit criteria</text>
+          <text x="93" y="58" text-anchor="middle" fill="#C5D5EA" font-size="9">horizon · BU · assumptions</text>
+          <line x1="175" y1="44" x2="205" y2="44" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah3)"/>
+          <rect x="205" y="20" width="165" height="48" rx="5" fill="#4A6FA5"/>
+          <text x="288" y="41" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">2. Model runs</text>
+          <text x="288" y="58" text-anchor="middle" fill="#C5D5EA" font-size="9">N scenarios generated &amp; ranked</text>
+          <line x1="370" y1="44" x2="400" y2="44" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah3)"/>
+          <rect x="400" y="20" width="190" height="48" rx="5" fill="#4A6FA5"/>
+          <text x="495" y="41" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">3. Filter &amp; compare</text>
+          <text x="495" y="58" text-anchor="middle" fill="#C5D5EA" font-size="9">cost · risk · role-appropriate view</text>
+          <line x1="590" y1="44" x2="620" y2="44" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah3)"/>
+          <rect x="620" y="20" width="160" height="48" rx="5" fill="#4A6FA5"/>
+          <text x="700" y="41" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">4. Select &amp; commit</text>
+          <text x="700" y="58" text-anchor="middle" fill="#C5D5EA" font-size="9">baseline locked for execution</text>
+          <rect x="10" y="90" width="165" height="110" rx="4" fill="#F7F7F5" stroke="#E2E2DE"/>
+          <text x="93" y="112" text-anchor="middle" fill="#666" font-size="10">Planning horizon</text>
+          <text x="93" y="128" text-anchor="middle" fill="#666" font-size="10">Business unit / product line</text>
+          <text x="93" y="144" text-anchor="middle" fill="#666" font-size="10">Growth assumptions</text>
+          <text x="93" y="160" text-anchor="middle" fill="#666" font-size="10">Role types &amp; constraints</text>
+          <rect x="205" y="90" width="165" height="110" rx="4" fill="#F7F7F5" stroke="#E2E2DE"/>
+          <text x="288" y="112" text-anchor="middle" fill="#666" font-size="10">Headcount projections</text>
+          <text x="288" y="128" text-anchor="middle" fill="#666" font-size="10">Cost &amp; timeline per scenario</text>
+          <text x="288" y="144" text-anchor="middle" fill="#666" font-size="10">Ranked filterable list</text>
+          <rect x="400" y="90" width="190" height="110" rx="4" fill="#F7F7F5" stroke="#E2E2DE"/>
+          <text x="495" y="112" text-anchor="middle" fill="#666" font-size="10">Filter by cost ceiling / risk</text>
+          <text x="495" y="128" text-anchor="middle" fill="#666" font-size="10">Side-by-side comparison</text>
+          <text x="495" y="144" text-anchor="middle" fill="#666" font-size="10">Finance / HR / Exec views</text>
+          <rect x="620" y="90" width="160" height="110" rx="4" fill="#F7F7F5" stroke="#E2E2DE"/>
+          <text x="700" y="112" text-anchor="middle" fill="#666" font-size="10">Selected scenario becomes</text>
+          <text x="700" y="128" text-anchor="middle" fill="#666" font-size="10">planning baseline</text>
+          <text x="700" y="144" text-anchor="middle" fill="#666" font-size="10">Locked for cross-team</text>
+          <text x="700" y="160" text-anchor="middle" fill="#666" font-size="10">execution</text>
+        </svg>
+        <div class="insight-box">
+          <div class="label">Key IA decision</div>
+          <p>Scenarios needed to be filterable objects, not report outputs — which required defining the data model before any UI work could begin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process-section" id="process">
+    <div class="wrap">
+      <div class="section-label">Approach</div>
+      <div class="process-grid">
+        <div>
+          <div class="process-item"><h4>Diagnose before designing</h4><p>Every project starts with surfacing misaligned assumptions. "Shared vocabulary doesn't mean shared meaning" — the reference interview trained me to find the gap between what people say they need and what the problem actually is.</p></div>
+          <div class="process-item"><h4>Define the objects before the interface</h4><p>Domain modeling, taxonomy design, and metadata standards before wireframes. The structure is the decision.</p></div>
+          <div class="process-item"><h4>Cross-functional by default</h4><p>Embedded with dev, business, and governance stakeholders — not handed off to them. Influence through clarity of craft, not organizational hierarchy.</p></div>
+          <div class="process-item"><h4>Documentation that survives turnover</h4><p>Systems designed so the logic is clear enough that people use the docs to train the next person.</p></div>
+        </div>
+        <div>
+          <div class="cs-col-label" style="margin-bottom:1.25rem;">What I work across</div>
+          <div class="skills-list">
+            <div class="skill-row"><span class="skill-dot"></span>Information architecture &amp; taxonomy design</div>
+            <div class="skill-row"><span class="skill-dot"></span>UX research &amp; interaction design</div>
+            <div class="skill-row"><span class="skill-dot"></span>Content strategy &amp; metadata standards</div>
+            <div class="skill-row"><span class="skill-dot"></span>Knowledge management &amp; enterprise search</div>
+            <div class="skill-row"><span class="skill-dot"></span>Semantic web standards (SKOS, OWL, DCAT)</div>
+            <div class="skill-row"><span class="skill-dot"></span>Power Platform (Power BI, Power Automate, Power Apps)</div>
+            <div class="skill-row"><span class="skill-dot"></span>Accessibility (WCAG) &amp; design systems</div>
+            <div class="skill-row"><span class="skill-dot"></span>AI/ML collaboration &amp; data governance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-name">Nicholas Huba</div>
+        <p class="footer-contact">
+          Senior UX Designer &amp; Information Architect<br>
+          Austin, TX · Open to remote<br><br>
+          <a href="mailto:nickhuba@gmail.com">nickhuba@gmail.com</a><br>
+          <a href="https://linkedin.com/in/nickhuba" target="_blank">linkedin.com/in/nickhuba</a>
+        </p>
+      </div>
+      <div>
+        <div class="cs-col-label" style="margin-bottom:0.75rem;">Background</div>
+        <p style="font-size:0.875rem; color:var(--ink-2); line-height:1.7;">Information architect and UX strategist with 12+ years solving the problems that happen before anyone opens a design tool. Formerly Senior UX Designer &amp; IA at General Motors IT (2013–2025).<br><br>MLIS — University of Texas at Austin<br>BA Psychology — University of North Texas</p>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <strong>Confidentiality notice:</strong> All work shown in this portfolio was created during employment at General Motors IT. Diagrams and descriptions are reconstructed from memory for portfolio purposes. No proprietary data, source code, or confidential documentation has been reproduced. All original intellectual property remains the property of General Motors.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+</script>
+</body>
+</html>
