@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Resource Forecasting — Nicholas Huba</title>
+<meta name="description" content="“Scenario” meant three different things, and a project had stalled six months over it. Defining the objects got it to an implementable design in five days.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Product Resource Forecasting — Nicholas Huba">
+<meta property="og:description" content="“Scenario” meant three different things, and a project had stalled six months over it. Defining the objects got it to an implementable design in five days.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%234A6FA5'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='white'%3ENH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Primary">
+  <div class="wrap">
+    <a class="nav-name" href="index.html">Nicholas Huba</a>
+    <ul class="nav-links">
+      <li class="nav-menu">
+        <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="work-menu">Work</button>
+        <ul class="nav-dropdown" id="work-menu">
+          <li><a href="data-discovery.html"><span class="nav-dropdown-num">Case study 01</span>Enterprise Data Discovery Platform</a></li>
+          <li><a href="devsecops.html"><span class="nav-dropdown-num">Case study 02</span>DevSecOps Compliance Platform</a></li>
+          <li><a href="forecasting.html" aria-current="page"><span class="nav-dropdown-num">Case study 03</span>Product Resource Forecasting</a></li>
+          <li class="nav-dropdown-all"><a href="index.html#case-studies">All case studies</a></li>
+        </ul>
+      </li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="index.html#process">Approach</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="case-section" id="prf" aria-labelledby="prf-title">
+    <div class="wrap">
+      <div class="cs-header">
+        <div class="cs-num">Case study 03</div>
+        <h1 class="cs-title" id="prf-title">Product Resource Forecasting</h1>
+        <div class="cs-sub">General Motors IT · Information architecture &amp; UX · includes the rescue project that shaped it</div>
+      </div>
+
+      <dl class="meta">
+        <div><dt>Timeline</dt><dd>Rescue: five business days from stalled to an implementable design. Forecasting: the pilot for DREAMS, the data science model management tool I went on to design.</dd></div>
+        <div><dt>My role</dt><dd>Defined the vocabulary and object model, and designed the interfaces for scenario setup, filtering, and comparison.</dd></div>
+        <div><dt>Worked with</dt><dd>The lead data scientist and business owner on the rescue; the data scientist who built the forecasting model and its business users; the development team that later built DREAMS.</dd></div>
+        <div><dt>Measure</dt><dd>The stalled project reached an implementable design in five business days and was built. For forecasting there is no time-saved figure: the gain was a capability that hadn’t existed.</dd></div>
+      </dl>
+
+      <div class="story">
+        <div class="story-block">
+          <h2 class="story-label">The ask</h2>
+          <p>Rescue: help a vehicle-sales incentive project that had been stuck for six months.</p>
+          <p>Forecasting: “just a report” where business users enter parameters and a machine-learning model returns scenarios.</p>
+        </div>
+        <div class="story-block">
+          <h2 class="story-label">What the problem actually was</h2>
+          <p>People said “scenario” and meant three different things. What looked like one document was many objects, and changing any input (data, parameters, or model) changes the result. Nobody could reliably say how they had arrived at a given scenario.</p>
+        </div>
+        <div class="story-block">
+          <h2 class="story-label">What I did</h2>
+          <p>Rescue: met the lead data scientist and business owner in person, had them walk me through their process step by step, and played it back until we agreed what each thing was. I wrote a shared vocabulary and designed a structure that tracked provenance, including how one period’s recommendation plus actuals feeds the next run.</p>
+          <p>Forecasting: reused the method. I went through the data scientist’s prototype word by word to pin down inputs, ranges, and meanings, then designed scenario setup, filtering, and side-by-side comparison.</p>
+        </div>
+        <div class="story-block">
+          <h2 class="story-label">What happened</h2>
+          <p>The incentive tool was built by the development team that later built DREAMS. Forecasting users had wanted out of spreadsheets; comparing generated scenarios, each spanning 90+ product lines over up to ten years, had meant comparing spreadsheets by hand. One user said it did what they had been doing, only better and faster.</p>
+        </div>
+      </div>
+
+      <table class="gloss">
+        <caption>The vocabulary: one word, three meanings</caption>
+        <thead><tr><th scope="col">What people said</th><th scope="col">What it referred to</th><th scope="col">What we called it</th></tr></thead>
+        <tbody>
+          <tr><td>Running a scenario</td><td>The values entered before a run</td><td>Parameters</td></tr>
+          <tr><td>Getting the scenarios</td><td>What the model generates</td><td>Output</td></tr>
+          <tr><td>Updating a scenario</td><td>A generated result edited by a person</td><td>Adjusted scenario</td></tr>
+        </tbody>
+      </table>
+
+      <div class="diagram-wrap">
+        <div class="diagram-label">Object model — what a scenario is made of, and how it carries forward</div>
+        <div class="diagram-scroll">
+        <svg viewBox="0 0 800 340" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="prf-t prf-d">
+          <title id="prf-t">Scenario object model with lineage and feedback</title>
+          <desc id="prf-d">A model, a set of parameters, and input data feed a run. Each run produces an output set of scenarios, up to hundreds per run. An analyst selects a scenario, which a person may then adjust. Every scenario records its lineage: which data, which parameters, which model. The recommended scenario plus actual results feed back in as the next period's input data.</desc>
+          <defs><marker id="ah3" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#4A6FA5"/></marker></defs>
+
+          <rect x="10" y="34" width="170" height="56" rx="5" fill="#4A6FA5"/>
+          <text x="95" y="58" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Model</text>
+          <text x="95" y="76" text-anchor="middle" fill="#F4F7FB" font-size="10">machine-learning model</text>
+          <rect x="10" y="114" width="170" height="56" rx="5" fill="#4A6FA5"/>
+          <text x="95" y="138" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Parameters</text>
+          <text x="95" y="156" text-anchor="middle" fill="#F4F7FB" font-size="10">boundaries on what comes back</text>
+          <rect x="10" y="194" width="170" height="56" rx="5" fill="#4A6FA5"/>
+          <text x="95" y="218" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Input data</text>
+          <text x="95" y="236" text-anchor="middle" fill="#F4F7FB" font-size="10">the data the model runs on</text>
+
+          <line x1="180" y1="62" x2="248" y2="126" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah3)"/>
+          <line x1="180" y1="142" x2="248" y2="142" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah3)"/>
+          <line x1="180" y1="222" x2="248" y2="158" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah3)"/>
+
+          <rect x="250" y="104" width="110" height="76" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+          <text x="305" y="136" text-anchor="middle" fill="#2A4A7A" font-size="13" font-weight="600">Run</text>
+          <text x="305" y="154" text-anchor="middle" fill="#3D5F94" font-size="10">one combination</text>
+          <text x="305" y="168" text-anchor="middle" fill="#3D5F94" font-size="10">of the three</text>
+          <line x1="360" y1="142" x2="418" y2="142" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah3)"/>
+
+          <rect x="420" y="104" width="140" height="76" rx="5" fill="#4A6FA5"/>
+          <text x="490" y="134" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Output</text>
+          <text x="490" y="152" text-anchor="middle" fill="#F4F7FB" font-size="10">scenario set,</text>
+          <text x="490" y="166" text-anchor="middle" fill="#F4F7FB" font-size="10">up to hundreds per run</text>
+
+          <line x1="560" y1="124" x2="618" y2="72" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah3)"/>
+          <rect x="620" y="34" width="170" height="56" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+          <text x="705" y="58" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Selected scenario</text>
+          <text x="705" y="76" text-anchor="middle" fill="#3D5F94" font-size="10">chosen by the analyst</text>
+          <line x1="705" y1="90" x2="705" y2="131" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah3)"/>
+          <rect x="620" y="134" width="170" height="64" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+          <text x="705" y="155" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Adjusted scenario</text>
+          <text x="705" y="171" text-anchor="middle" fill="#3D5F94" font-size="10">generated by the model,</text>
+          <text x="705" y="185" text-anchor="middle" fill="#3D5F94" font-size="10">then edited by a person</text>
+
+          <line x1="490" y1="180" x2="490" y2="212" stroke="#888" stroke-width="1" stroke-dasharray="3 2"/>
+          <rect x="250" y="214" width="310" height="50" rx="4" fill="none" stroke="#888" stroke-dasharray="4 3"/>
+          <text x="405" y="235" text-anchor="middle" fill="#333" font-size="11" font-weight="600">Every scenario records its lineage:</text>
+          <text x="405" y="252" text-anchor="middle" fill="#555" font-size="10.5">which data · which parameters · which model</text>
+
+          <path d="M705,198 L705,298 L95,298 L95,254" fill="none" stroke="#4A6FA5" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#ah3)"/>
+          <text x="400" y="320" text-anchor="middle" fill="#444" font-size="10.5">The recommended scenario plus actual results become the next period’s input data.</text>
+        </svg>
+        </div>
+        <div class="insight-box">
+          <div class="label">Key IA decision</div>
+          <p>A scenario is not one document. Separating the objects (data, parameters, model, output), and recording each scenario’s lineage, let the interface follow the actual process instead of a single imagined report.</p>
+        </div>
+      </div>
+
+      <details class="depth">
+        <summary>What I deliberately left alone, and how this connects to DREAMS</summary>
+        <div class="depth-body">
+          <h3>What I left alone</h3>
+          <p>Users were already happy with how scenarios were output, a ranked list plus a bubble chart for analysis, so I kept it. The leverage was upstream: giving the process recognizable, trackable steps and building the interface to match.</p>
+          <h3>The through-line</h3>
+          <p>The rescue project taught me to pull apart the objects hiding inside “one report,” and I applied that directly to forecasting. Forecasting then piloted DREAMS, which let a data scientist upload data and a model, schedule runs with chosen compute resources, chain models together, and track which model and data produced each result. I believe the rescue is one reason I moved onto DREAMS; that is my reading, not something I was told.</p>
+        </div>
+      </details>
+
+      <nav class="case-pager" aria-label="Case studies">
+        <a href="index.html#case-studies">← All case studies</a>
+        <a href="data-discovery.html">Next: Enterprise Data Discovery Platform →</a>
+      </nav>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-name">Nicholas Huba</div>
+        <p class="updated">Last updated LAST_UPDATED_PLACEHOLDER</p>
+        <p class="footer-contact">
+          Information Architect &amp; Content Strategist<br>
+          Austin, TX · Open to remote<br><br>
+          <a href="mailto:nicholas.huba@gmail.com">nicholas.huba@gmail.com</a><br>
+          <a href="https://www.linkedin.com/in/nicholas-huba" target="_blank" rel="noopener">linkedin.com/in/nicholas-huba</a>
+        </p>
+      </div>
+      <div>
+        <div class="cs-col-label">Background</div>
+        <p class="footer-bg">Information architect and content strategist with 12+ years turning messy requests into clear structure, shared vocabulary, and usable metadata. Formerly Senior Content Designer / Information Architect at General Motors IT (2013–2025).<br><br>I’m glad to walk through any of these case studies in more detail.<br><br>MLIS — University of Texas at Austin<br>BA Psychology — University of North Texas</p>
+      </div>
+    </div>
+    <div class="disclaimer footer-disclaimer">
+      <strong>Confidentiality notice:</strong> All work shown in this portfolio was created during employment at General Motors IT. Diagrams and descriptions are reconstructed from memory for portfolio purposes. No proprietary data, source code, or confidential documentation has been reproduced. All original intellectual property remains the property of General Motors.
+    </div>
+  </div>
+</footer>
+</body>
+</html>
