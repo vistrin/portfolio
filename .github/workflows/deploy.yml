@@ -27,8 +27,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Copy shared nav and footer into every page
-        run: python3 sync-partials.py
+      - name: Build shared and data-driven page sections
+        run: python3 build.py
 
       - name: Set last updated date
         run: |
@@ -39,7 +39,7 @@ jobs:
         run: |
           rsync -a ./ _site/ \
             --exclude '.git*' --exclude '.github' --exclude '.vscode' \
-            --exclude '_partials' --exclude 'sync-partials.py' --exclude '_site'
+            --exclude '.githooks' --exclude '_partials' --exclude 'data' --exclude 'build.py' --exclude '_site'
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

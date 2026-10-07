@@ -1,0 +1,28 @@
+{
+ "_note": "Which approved career-db entries appear on experience.html, grouped under each job. Titles, dates, and bullet wording come from site.json; edit them in career-db, not here. Set \"org\": null to hide the employer line. Run `python build.py` after editing.",
+ "jobs": [
+  {
+   "employer": "FREELANCE",
+   "org": null,
+   "groups": [
+    {"entries": ["FL-03", "FL-02", "FL-01"]}
+   ]
+  },
+  {
+   "employer": "GM",
+   "groups": [
+    {"heading": "Enterprise Data Discovery Platform", "link": "data-discovery.html", "entries": ["GM-EDW-01", "GM-EDW-08", "GM-EDW-02", "GM-EDW-03"]},
+    {"heading": "Enterprise Systems & Domain Architecture", "entries": ["GM-DSO-01", "GM-FC-01", "GM-D365-01", "GM-CMS-01", "GM-DSGN-02"]},
+    {"heading": "Governance & Content Strategy", "entries": ["GM-CD-02", "GM-EDW-05", "GM-EDW-07"]},
+    {"heading": "Cross-Functional Leadership & Stakeholder Alignment", "entries": ["GM-REQ-02", "GM-RESCUE-01", "GM-MENT-01"]},
+    {"heading": "Accessibility & Knowledge Transfer", "entries": ["GM-TEST-01", "GM-TRAIN-01"]}
+   ]
+  },
+  {
+   "employer": "GISD",
+   "groups": [
+    {"entries": ["GISD-05", "GISD-02", "GISD-01"]}
+   ]
+  }
+ ]
+}

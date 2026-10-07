@@ -1,0 +1,1215 @@
+{
+ "generated": "2026-10-07",
+ "source_version": "2.0",
+ "profile": {
+  "name": "Nicholas Huba",
+  "email": "nicholas.huba@gmail.com",
+  "linkedin": "linkedin.com/in/nicholas-huba",
+  "portfolio": "vistrin.github.io/portfolio"
+ },
+ "employers": [
+  {
+   "id": "GM",
+   "name": "General Motors, IT",
+   "location": "Austin, TX",
+   "dates": "January 2013 – January 2025",
+   "title": "Senior UX Designer & Information Architect"
+  },
+  {
+   "id": "FREELANCE",
+   "name": "Freelance / Self-Employed (Independent)",
+   "location": "Austin, TX",
+   "dates": "March 2025 – Present",
+   "title": "Independent Information Architect & UX Designer"
+  },
+  {
+   "id": "EMERSON",
+   "name": "Emerson Automation Solutions",
+   "location": "Austin, TX",
+   "dates": "June 2011 – August 2011; June 2012 – November 2012 (two internship periods)",
+   "title": "Intern, Human Centered Design"
+  },
+  {
+   "id": "UT",
+   "name": "University of Texas at Austin, School of Information",
+   "location": "Austin, TX",
+   "dates": "June 2011 – May 2012",
+   "title": "Research Assistant"
+  },
+  {
+   "id": "GISD",
+   "name": "Georgetown Independent School District",
+   "location": "Georgetown, TX",
+   "dates": "October 2003 – June 2010",
+   "title": "IT Support & Database Development"
+  },
+  {
+   "id": "OTHER_FAB",
+   "name": "Fabrication, metalwork & maker experience (non-employment)",
+   "location": "Austin area",
+   "dates": "1997 – present (various)",
+   "title": "(various)"
+  },
+  {
+   "id": "MLIS",
+   "name": "MLIS coursework, University of Texas at Austin, School of Information",
+   "location": "Austin, TX",
+   "dates": "2010 – 2012",
+   "title": "Graduate student (academic projects)"
+  }
+ ],
+ "entries": [
+  {
+   "id": "GM-EDW-01",
+   "employer_id": "GM",
+   "theme": "Enterprise data discovery platform",
+   "projects": [
+    "P-EDW"
+   ],
+   "text": "Designed the information architecture and metadata model for GM's enterprise data discovery portal, bringing reports and datasets from siloed ETL, BI, governance, and storage teams into one place and cutting data discovery from days or weeks to minutes.",
+   "skills": [
+    "information architecture",
+    "taxonomy",
+    "metadata",
+    "enterprise search",
+    "data catalog",
+    "navigation design"
+   ]
+  },
+  {
+   "id": "GM-EDW-02",
+   "employer_id": "GM",
+   "theme": "Metadata standards & governance",
+   "projects": [
+    "P-EDW"
+   ],
+   "text": "Partnered with data governance and business units to build metadata standards into the data management lifecycle, improving lineage visibility.",
+   "skills": [
+    "metadata governance",
+    "data governance",
+    "taxonomy",
+    "data lineage",
+    "SKOS",
+    "OWL",
+    "DCAT"
+   ]
+  },
+  {
+   "id": "GM-EDW-03",
+   "employer_id": "GM",
+   "theme": "Ontologies & semantic architecture",
+   "projects": [
+    "P-EDW"
+   ],
+   "text": "Designed a custom metadata model for the enterprise data portal, borrowing tags, labels, and definitions from SKOS, OWL, and DCAT so the system could adopt those standards later with little rework.",
+   "skills": [
+    "ontology",
+    "semantic modeling",
+    "SKOS",
+    "OWL",
+    "DCAT",
+    "AI-ready content",
+    "automated classification"
+   ]
+  },
+  {
+   "id": "GM-EDW-04",
+   "employer_id": "GM",
+   "theme": "Data & semantic models",
+   "projects": [
+    "P-EDW"
+   ],
+   "text": "Designed data models, semantic models, and data definitions across multiple computing environments to support enterprise analytics and reporting.",
+   "skills": [
+    "data modeling",
+    "semantic modeling"
+   ]
+  },
+  {
+   "id": "GM-EDW-05",
+   "employer_id": "GM",
+   "theme": "Terminology & shared vocabulary",
+   "projects": [
+    "P-EDW"
+   ],
+   "text": "Facilitated workshops with different business verticals to capture and clarify legacy terminology and address definition conflicts, reducing confusion when searching centralized repository.",
+   "skills": [
+    "controlled vocabulary",
+    "terminology management",
+    "workshop facilitation",
+    "naming"
+   ]
+  },
+  {
+   "id": "GM-EDW-06",
+   "employer_id": "GM",
+   "theme": "Metadata quality rules",
+   "projects": [
+    "P-EDW"
+   ],
+   "text": "Wrote rules for evaluating the quality of user provided information of library entities (title, description, tags, etc.), to hold owners accountable for clearly identifying their content.",
+   "skills": [
+    "metadata quality",
+    "content governance"
+   ]
+  },
+  {
+   "id": "GM-EDW-07",
+   "employer_id": "GM",
+   "theme": "Security-aware discovery",
+   "projects": [
+    "P-EDW"
+   ],
+   "text": "Incorporated security requirements into application architecture, ensuring data protection and access controls met enterprise security standards",
+   "skills": [
+    "access control",
+    "data security",
+    "search design",
+    "privacy"
+   ]
+  },
+  {
+   "id": "GM-EDW-08",
+   "employer_id": "GM",
+   "theme": "Story-derived: diagnosis",
+   "projects": [
+    "P-EDW"
+   ],
+   "text": "Reframed a request for a report-finding website as a metadata supply problem, shifting effort from navigation features to sourcing metadata from upstream systems.",
+   "skills": [
+    "discovery research",
+    "diagnosis",
+    "naming",
+    "metadata strategy"
+   ]
+  },
+  {
+   "id": "GM-AIML-01",
+   "employer_id": "GM",
+   "theme": "AI/ML data analysis tools (cost savings)",
+   "projects": [
+    "P-FC",
+    "P-RESCUE",
+    "P-DREAMS"
+   ],
+   "text": "Collaborated with business and data science teams creating high-value, AI/ML data analysis tools, improving operational efficiency for multiple business streams, contributing to 100’s of millions in cost savings.",
+   "skills": [
+    "AI/ML",
+    "data science collaboration",
+    "decision support",
+    "data visualization"
+   ]
+  },
+  {
+   "id": "GM-DREAMS-01",
+   "employer_id": "GM",
+   "theme": "Low-code ML model execution platform (DREAMS)",
+   "projects": [
+    "P-DREAMS"
+   ],
+   "text": "Designed low-code machine learning model execution platform, reducing IT dependency and accelerating data science processes.",
+   "skills": [
+    "ML platform design",
+    "workflow design",
+    "object modeling",
+    "provenance"
+   ]
+  },
+  {
+   "id": "GM-DREAMS-02",
+   "employer_id": "GM",
+   "theme": "Usage dashboard for DREAMS",
+   "projects": [
+    "P-DREAMS"
+   ],
+   "text": "Built a Power BI dashboard tracking usage of the DREAMS ML model-execution platform, giving leadership data to evaluate adoption and set priorities.",
+   "skills": [
+    "Power BI",
+    "dashboard design",
+    "product metrics"
+   ]
+  },
+  {
+   "id": "GM-FC-01",
+   "employer_id": "GM",
+   "theme": "Forecasting scenario tool",
+   "projects": [
+    "P-FC"
+   ],
+   "text": "Designed scenario setup, filtering, and side-by-side comparison for an ML forecasting tool producing up to 100 scenarios across 90+ product lines, replacing manual spreadsheet matching.",
+   "skills": [
+    "decision support",
+    "scenario modeling UX",
+    "object modeling"
+   ]
+  },
+  {
+   "id": "GM-RESCUE-01",
+   "employer_id": "GM",
+   "theme": "Six-month business-IT impasse",
+   "projects": [
+    "P-RESCUE"
+   ],
+   "text": "Chosen to repair a six-month conflict between a critical business team and an IT project team. Interviewed, listened, and collaborated with business partners to address their grievances and design a new solution by the end of the week acceptable for both parties.",
+   "skills": [
+    "facilitation",
+    "stakeholder alignment",
+    "conflict resolution",
+    "requirements",
+    "object modeling"
+   ]
+  },
+  {
+   "id": "GM-DSO-01",
+   "employer_id": "GM",
+   "theme": "DevSecOps compliance / deployment gatekeeping platform",
+   "projects": [
+    "P-DSO"
+   ],
+   "text": "Designed the information architecture for a deployment-readiness platform that captured project details once and tied each required document to its approval gate, replacing a packet of redundant forms.",
+   "skills": [
+    "workflow design",
+    "compliance UX",
+    "information architecture",
+    "DevSecOps"
+   ]
+  },
+  {
+   "id": "GM-CMS-01",
+   "employer_id": "GM",
+   "theme": "Developer documentation CMS",
+   "projects": [
+    "P-CMS"
+   ],
+   "text": "Designed and built a prototype content management system for developer documentation, standardizing how development teams wrote and shared technical content.",
+   "skills": [
+    "CMS architecture",
+    "structured content",
+    "DITA",
+    "content reuse",
+    "content modeling"
+   ]
+  },
+  {
+   "id": "GM-GIS-01",
+   "employer_id": "GM",
+   "theme": "GIS visualization for EV charging",
+   "projects": [
+    "P-GIS"
+   ],
+   "text": "Designed an interface for exploring large GIS datasets, helping analysts identify optimal locations to expand GM's EV charging network.",
+   "skills": [
+    "data visualization",
+    "GIS",
+    "Mapbox",
+    "interface design"
+   ]
+  },
+  {
+   "id": "GM-D365-01",
+   "employer_id": "GM",
+   "theme": "Microsoft Dynamics 365 redesign",
+   "projects": [
+    "P-D365"
+   ],
+   "text": "Redesigned the Dynamics 365 interface and object model around the sales process for international dealerships, removing clutter and speeding up invoicing.",
+   "skills": [
+    "CRM",
+    "Dynamics 365",
+    "object modeling",
+    "interaction design"
+   ]
+  },
+  {
+   "id": "GM-DS-01",
+   "employer_id": "GM",
+   "theme": "Enterprise design system contribution",
+   "projects": [],
+   "text": "Contributed to the refinement of reusable UI components for enterprise-level design system, partnered with developers so components are as technically feasible as they are visually consistent.",
+   "skills": [
+    "design systems",
+    "component libraries",
+    "UI design",
+    "developer collaboration"
+   ]
+  },
+  {
+   "id": "GM-TEST-01",
+   "employer_id": "GM",
+   "theme": "Usability & accessibility testing",
+   "projects": [],
+   "text": "Conducted comprehensive usability and accessibility (WCAG) testing at all stages of product lifecycle (design, implementation, post-release) and coached QA teams on usability principals, catching costly mistakes earlier.",
+   "skills": [
+    "usability testing",
+    "accessibility",
+    "WCAG",
+    "Section 508",
+    "NVDA",
+    "axe DevTools",
+    "QA collaboration"
+   ]
+  },
+  {
+   "id": "GM-TEST-02",
+   "employer_id": "GM",
+   "theme": "Accessibility test detail",
+   "projects": [],
+   "text": "Validated keyboard navigation, screen reader compatibility, color contrast, and ARIA implementation across enterprise applications.",
+   "skills": [
+    "accessibility",
+    "ARIA",
+    "keyboard navigation",
+    "test documentation"
+   ]
+  },
+  {
+   "id": "GM-TEST-03",
+   "employer_id": "GM",
+   "theme": "Usability study execution",
+   "projects": [],
+   "text": "Ran usability tests across the product lifecycle — recruiting participants, facilitating sessions, and turning findings into design changes.",
+   "skills": [
+    "usability testing",
+    "research operations",
+    "synthesis"
+   ]
+  },
+  {
+   "id": "GM-REQ-01",
+   "employer_id": "GM",
+   "theme": "User story review & clarification",
+   "projects": [],
+   "text": "Reviewed backlog with product owners and stakeholders directly to identify and clarify user story requirements reducing the risk of carry-over caused by insufficient information or design.",
+   "skills": [
+    "requirements",
+    "user stories",
+    "acceptance criteria",
+    "backlog refinement"
+   ]
+  },
+  {
+   "id": "GM-REQ-02",
+   "employer_id": "GM",
+   "theme": "Requirements gathering & workshops",
+   "projects": [],
+   "text": "Led workshops with business partners, architects, and cross-functional teams to identify complex technical and functional requirements for enterprise application systems.",
+   "skills": [
+    "requirements",
+    "workshop facilitation",
+    "stakeholder alignment",
+    "discovery"
+   ]
+  },
+  {
+   "id": "GM-REQ-03",
+   "employer_id": "GM",
+   "theme": "Process documentation & analysis",
+   "projects": [],
+   "text": "Produced design documentation — architecture diagrams, annotated wireframes, interaction specs, and handoff guides — for clean design-to-development handoff.",
+   "skills": [
+    "documentation",
+    "process mapping",
+    "gap analysis",
+    "technical writing"
+   ]
+  },
+  {
+   "id": "GM-TRAIN-01",
+   "employer_id": "GM",
+   "theme": "Onboarding training on the data organization",
+   "projects": [],
+   "text": "Summarized the complex and varied, teams, processes, and services of the entire Global Data, AI, and Analytics Services (GDAAS) vertical into an effective presentation and is now part of the required training for new college hires.",
+   "skills": [
+    "training design",
+    "instructional content",
+    "presentation",
+    "onboarding"
+   ]
+  },
+  {
+   "id": "GM-TRAIN-02",
+   "employer_id": "GM",
+   "theme": "Training developers on UX & data viz",
+   "projects": [],
+   "text": "Prepared and conducted trainings on data visualization guidelines, visual design principles, and communication methods introducing beginning developers to the concept and effectiveness of UX practices.",
+   "skills": [
+    "training",
+    "data visualization",
+    "visual design"
+   ]
+  },
+  {
+   "id": "GM-TALK-01",
+   "employer_id": "GM",
+   "theme": "'Storytelling with data' speaker",
+   "projects": [],
+   "text": "Invited to speak at organization-sponsored, “storytelling with data” user group, demonstrating how to make abstract concepts and numbers more informative and engaging, so stakeholders are more invested in acting on their findings.",
+   "skills": [
+    "public speaking",
+    "data storytelling",
+    "communication"
+   ]
+  },
+  {
+   "id": "GM-COMM-01",
+   "employer_id": "GM",
+   "theme": "Communicating across levels",
+   "projects": [],
+   "text": "Effectively presented technical and design information to diverse audiences, from new college hires to executive leadership, tailoring communication for optimal clarity.",
+   "skills": [
+    "communication",
+    "presentation",
+    "stakeholder management"
+   ]
+  },
+  {
+   "id": "GM-EXEC-01",
+   "employer_id": "GM",
+   "theme": "Influencing executive decisions",
+   "projects": [],
+   "text": "Translated research findings and design decisions into business implications for executive leadership, informing key product decisions.",
+   "skills": [
+    "executive communication",
+    "influence",
+    "strategy"
+   ]
+  },
+  {
+   "id": "GM-MENT-01",
+   "employer_id": "GM",
+   "theme": "Mentoring",
+   "projects": [],
+   "text": "Mentored team members in advanced design practices like evaluating project scope/cadence, advocating their work, and communicating their ideas in the intricate and intimidating nature of large-scale corporate environments.",
+   "skills": [
+    "mentorship",
+    "coaching",
+    "leadership"
+   ]
+  },
+  {
+   "id": "GM-CULT-01",
+   "employer_id": "GM",
+   "theme": "Campus recruiting",
+   "projects": [],
+   "text": "Represented GM as a recruiter for the University of Texas at Austin. Attended multiple career fairs, screened dozens of resumés, and made recommendations for promising candidates.",
+   "skills": [
+    "recruiting",
+    "community"
+   ]
+  },
+  {
+   "id": "GM-CULT-02",
+   "employer_id": "GM",
+   "theme": "Workplace of Choice Champion",
+   "projects": [],
+   "text": "Became a Workplace of Choice Champion, leading \"Booster-Shot\" sessions for a team of 20+ people to support the company culture shift and establishment of the GM Behaviors.",
+   "skills": [
+    "culture",
+    "facilitation",
+    "change management"
+   ]
+  },
+  {
+   "id": "GM-CULT-03",
+   "employer_id": "GM",
+   "theme": "Diagonal-slice survey analysis",
+   "projects": [],
+   "text": "Scheduled, observed, and analyzed \"diagonal slice\" meetings providing leadership details on how to address Workplace of Choice survey results and increase employee satisfaction.",
+   "skills": [
+    "qualitative research",
+    "employee experience"
+   ]
+  },
+  {
+   "id": "GM-CULT-04",
+   "employer_id": "GM",
+   "theme": "DEI small-group facilitation",
+   "projects": [],
+   "text": "Volunteered to lead small group discussions as part of GM's larger, Diversity, Equity, and Inclusion (DEI) initiative, highlighting how critical feeling safe at work is, as well as the importance of modeling the behaviors required to do it.",
+   "skills": [
+    "facilitation",
+    "inclusion"
+   ]
+  },
+  {
+   "id": "GM-UXS-01",
+   "employer_id": "GM",
+   "theme": "UX strategy & systems thinking",
+   "projects": [],
+   "text": "Led UX strategy for enterprise data and reporting tools, working with product, engineering, and executive teams to simplify data discovery and access.",
+   "skills": [
+    "UX strategy",
+    "systems thinking",
+    "conceptual models"
+   ]
+  },
+  {
+   "id": "GM-DSGN-01",
+   "employer_id": "GM",
+   "theme": "Design execution: wireframes to hi-fi",
+   "projects": [],
+   "text": "Designed wireframes, interactive prototypes, and high-fidelity mockups in Figma and Axure for enterprise data platforms, AI/ML tools, DevSecOps compliance systems, and CRM customization (Microsoft Dynamics 365), balancing business requirements with technical feasibility",
+   "skills": [
+    "wireframing",
+    "prototyping",
+    "Figma",
+    "Axure",
+    "high-fidelity design",
+    "developer handoff"
+   ]
+  },
+  {
+   "id": "GM-DSGN-02",
+   "employer_id": "GM",
+   "theme": "Domain modeling & design scoping",
+   "projects": [],
+   "text": "Architected information systems and domain models for enterprise platforms, defining object relationships, taxonomy structures, configuration logic, and system behaviors. Established scalable IA foundations engineers built upon across multiple product iterations",
+   "skills": [
+    "domain modeling",
+    "object relationships",
+    "design scoping",
+    "engineering partnership"
+   ]
+  },
+  {
+   "id": "GM-DSGN-03",
+   "employer_id": "GM",
+   "theme": "Design management",
+   "projects": [],
+   "text": "Led design reviews across concurrent projects, turning stakeholder feedback into design direction and keeping teams aligned.",
+   "skills": [
+    "design management",
+    "project tracking",
+    "Jira",
+    "Confluence"
+   ]
+  },
+  {
+   "id": "GM-RES-01",
+   "employer_id": "GM",
+   "theme": "User research",
+   "projects": [],
+   "text": "Led qualitative research on how different user groups work with complex enterprise systems, using findings to shape information architecture.",
+   "skills": [
+    "user research",
+    "qualitative research",
+    "contextual inquiry",
+    "interviews"
+   ]
+  },
+  {
+   "id": "GM-RES-02",
+   "employer_id": "GM",
+   "theme": "Usage analytics & dashboards",
+   "projects": [],
+   "text": "Analyzed usage data and behavior patterns to identify improvements and inform feature prioritization.",
+   "skills": [
+    "analytics",
+    "dashboards",
+    "data visualization"
+   ]
+  },
+  {
+   "id": "GM-PO-01",
+   "employer_id": "GM",
+   "theme": "Product ownership (PO framing)",
+   "projects": [],
+   "text": "Prioritized and sequenced features by business impact, user needs, and technical dependencies, balancing new work against technical debt and defects.",
+   "skills": [
+    "product ownership",
+    "agile",
+    "backlog management",
+    "release planning"
+   ]
+  },
+  {
+   "id": "GM-CD-01",
+   "employer_id": "GM",
+   "theme": "Content design & UX writing",
+   "projects": [],
+   "text": "Designed content for enterprise platforms — navigation, system messages, error messages, and onboarding flows — to reduce cognitive load and support self-service.",
+   "skills": [
+    "content design",
+    "UX writing",
+    "microcopy",
+    "navigation labels"
+   ]
+  },
+  {
+   "id": "GM-CD-02",
+   "employer_id": "GM",
+   "theme": "Content standards & governance",
+   "projects": [],
+   "text": "Defined content standards, voice guidelines, and editorial workflows for enterprise knowledge systems to keep content consistent.",
+   "skills": [
+    "content governance",
+    "style guides",
+    "editorial workflow",
+    "content standards"
+   ]
+  },
+  {
+   "id": "GM-CD-03",
+   "employer_id": "GM",
+   "theme": "Data-driven content iteration",
+   "projects": [],
+   "text": "Used analytics and user research to validate content decisions, with dashboards tracking content effectiveness.",
+   "skills": [
+    "A/B testing",
+    "content analytics",
+    "iteration"
+   ]
+  },
+  {
+   "id": "GM-BI-01",
+   "employer_id": "GM",
+   "theme": "Analytics & BI strategy (BI framing)",
+   "projects": [],
+   "text": "Translated business objectives into analytics solutions, working with stakeholders to define information needs and design reporting.",
+   "skills": [
+    "business intelligence",
+    "analytics strategy",
+    "data quality",
+    "Power BI",
+    "Tableau"
+   ]
+  },
+  {
+   "id": "GM-EDU-01",
+   "employer_id": "GM",
+   "theme": "Education-sector framing",
+   "projects": [],
+   "text": "Created knowledge-sharing platforms and internal training resources used across departments.",
+   "skills": [
+    "training",
+    "documentation",
+    "workshops"
+   ]
+  },
+  {
+   "id": "GM-ACC-01",
+   "employer_id": "GM",
+   "theme": "Technical-support framing (lab tech)",
+   "projects": [],
+   "text": "Ran technical workshops and training sessions, turning complex requirements into clear guidance for varied audiences.",
+   "skills": [
+    "technical support",
+    "training"
+   ]
+  },
+  {
+   "id": "GM-SUM-01",
+   "employer_id": "GM",
+   "theme": "Role overview sentence",
+   "projects": [],
+   "text": "Designed information architecture for enterprise CRM (Microsoft Dynamics 365), AI/ML platforms, DevSecOps compliance systems, and developer documentation CMS.",
+   "skills": [
+    "portfolio overview"
+   ]
+  },
+  {
+   "id": "FL-01",
+   "employer_id": "FREELANCE",
+   "theme": "Small-business IA / UX consulting",
+   "projects": [],
+   "text": "Consulted with small business clients on e-commerce and product catalog UX, redesigning information architecture for more intuitive browsing structures and advising on process improvements for product tracking and inventory workflows.",
+   "skills": [
+    "information architecture",
+    "e-commerce UX",
+    "consulting"
+   ]
+  },
+  {
+   "id": "FL-02",
+   "employer_id": "FREELANCE",
+   "theme": "Law-firm Power Platform automation",
+   "projects": [
+    "P-LAW"
+   ],
+   "text": "Building business process automation solutions for a law firm using Microsoft Power Platform (Power Automate, Power Apps, Power BI, SharePoint), including automated court filing approval tracking and dynamic trial schedule management.",
+   "skills": [
+    "Power Automate",
+    "Power Apps",
+    "Power BI",
+    "SharePoint",
+    "workflow automation"
+   ]
+  },
+  {
+   "id": "FL-03",
+   "employer_id": "FREELANCE",
+   "theme": "Legal document classification",
+   "projects": [
+    "P-LAW"
+   ],
+   "text": "Designed a document taxonomy, controlled vocabulary, and metadata standards for a legal services firm's document classification.",
+   "skills": [
+    "taxonomy",
+    "controlled vocabulary",
+    "document classification",
+    "metadata"
+   ]
+  },
+  {
+   "id": "EM-01",
+   "employer_id": "EMERSON",
+   "theme": "UI guideline management platform (proto design system)",
+   "projects": [],
+   "text": "Designed a structured-authoring model (DITA specialization, XML schemas) for a contributor-maintained UI guideline library, and delivered stakeholder research, a content model, and an initial SharePoint library.",
+   "skills": [
+    "design systems",
+    "UI guidelines",
+    "knowledge repository",
+    "requirements"
+   ]
+  },
+  {
+   "id": "EM-02",
+   "employer_id": "EMERSON",
+   "theme": "Usability backlog analysis & roadmap",
+   "projects": [],
+   "text": "Performed qualitative analysis on backlog of usability tests and interviews, presented roadmap to executive leadership for implementing future features with the highest value impact.",
+   "skills": [
+    "qualitative analysis",
+    "usability research",
+    "roadmapping",
+    "synthesis"
+   ]
+  },
+  {
+   "id": "UT-01",
+   "employer_id": "UT",
+   "theme": "Qualitative research on health information seeking",
+   "projects": [],
+   "text": "Led qualitative research on health information-seeking behaviors; contributed findings to new design frameworks for patient information systems.",
+   "skills": [
+    "qualitative research",
+    "health informatics",
+    "interviews"
+   ]
+  },
+  {
+   "id": "UT-02",
+   "employer_id": "UT",
+   "theme": "Research instruments & interviews",
+   "projects": [],
+   "text": "Conducted over 25 personal interviews and analyzed data from over 40 interviews, finding trends and patterns significant to the hypothesis and unexpected areas of focus for future investigations.",
+   "skills": [
+    "research design",
+    "interviewing",
+    "qualitative analysis"
+   ]
+  },
+  {
+   "id": "UT-03",
+   "employer_id": "UT",
+   "theme": "Participant recruitment",
+   "projects": [],
+   "text": "Managed advertising, recruitment, and screening of study participants to ensure time and resources were not wasted on gathering unreliable or redundant data.",
+   "skills": [
+    "research operations",
+    "recruitment"
+   ]
+  },
+  {
+   "id": "UT-04",
+   "employer_id": "UT",
+   "theme": "Publication",
+   "projects": [],
+   "text": "Published study on how healthcare providers from a broad range disciplines view the same patient information differently, emphasizing the importance of keeping health information flexible and adaptable.",
+   "skills": [
+    "research",
+    "publication",
+    "health informatics"
+   ]
+  },
+  {
+   "id": "UT-05",
+   "employer_id": "UT",
+   "theme": "EMR usability study",
+   "projects": [],
+   "text": "Conducted usability study for electronic medical records company, presented updated designs to increase speed and reliability of drug prescription process.",
+   "skills": [
+    "usability testing",
+    "healthcare UX",
+    "interface redesign"
+   ]
+  },
+  {
+   "id": "UT-06",
+   "employer_id": "UT",
+   "theme": "NVivo qualitative analysis",
+   "projects": [],
+   "text": "Analyzed complex qualitative datasets using NVivo, synthesizing insights to inform information system design and knowledge organization strategies.",
+   "skills": [
+    "NVivo",
+    "qualitative analysis"
+   ]
+  },
+  {
+   "id": "GISD-01",
+   "employer_id": "GISD",
+   "theme": "Digital documentation solutions",
+   "projects": [],
+   "text": "Created digital documentation solutions for various internal departments reducing confusion and loss of information.",
+   "skills": [
+    "documentation",
+    "knowledge management",
+    "technical writing"
+   ]
+  },
+  {
+   "id": "GISD-02",
+   "employer_id": "GISD",
+   "theme": "At-risk student tracking database",
+   "projects": [],
+   "text": "Designed and built a custom Microsoft Access database for high school counselors to track student interventions, keep case notes, and pull up emergency contacts faster than paper files.",
+   "skills": [
+    "Microsoft Access",
+    "case management",
+    "database design",
+    "emergency information",
+    "information access"
+   ]
+  },
+  {
+   "id": "GISD-03",
+   "employer_id": "GISD",
+   "theme": "Student information system integration",
+   "projects": [],
+   "text": "Helped staff better utilize the student information database for quicker information integration (generating email groups, syncing records, importing data into test management software), eliminating time intensive and error prone manual entry.",
+   "skills": [
+    "data integration",
+    "process improvement",
+    "training"
+   ]
+  },
+  {
+   "id": "GISD-04",
+   "employer_id": "GISD",
+   "theme": "End-user technical support",
+   "projects": [],
+   "text": "Worked directly with end-users to efficiently (and calmly) troubleshoot and resolve a wide range of technical issues.",
+   "skills": [
+    "technical support",
+    "troubleshooting",
+    "communication"
+   ]
+  },
+  {
+   "id": "GISD-05",
+   "employer_id": "GISD",
+   "theme": "IT infrastructure administration",
+   "projects": [],
+   "text": "Managed IT infrastructure for 2,000+ student district including Active Directory administration, hardware provisioning, helpdesk operations, and network administration.",
+   "skills": [
+    "Active Directory",
+    "IT administration",
+    "helpdesk",
+    "networking"
+   ]
+  },
+  {
+   "id": "GISD-06",
+   "employer_id": "GISD",
+   "theme": "Training & job aids",
+   "projects": [],
+   "text": "Developed training resources and instructional content enabling staff to efficiently access and utilize critical systems during high-pressure situations",
+   "skills": [
+    "training",
+    "instructional design"
+   ]
+  },
+  {
+   "id": "GISD-07",
+   "employer_id": "GISD",
+   "theme": "3D printer & equipment support",
+   "projects": [],
+   "text": "Supported 3D printer operations: driver installation, network configuration, software setup, and test prints.",
+   "skills": [
+    "3D printing",
+    "equipment maintenance",
+    "inventory"
+   ]
+  },
+  {
+   "id": "FAB-01",
+   "employer_id": "OTHER_FAB",
+   "theme": "Blacksmithing & armoring (1997; 2001–2003)",
+   "projects": [],
+   "text": "Trained in traditional and modern metalworking including forging, welding, grinding, finishing, and heat treatment in professional ornamental ironworks shop",
+   "skills": [
+    "blacksmithing",
+    "welding",
+    "forging",
+    "shop safety"
+   ]
+  },
+  {
+   "id": "FAB-02",
+   "employer_id": "OTHER_FAB",
+   "theme": "TechShop Austin (2014–2015)",
+   "projects": [],
+   "text": "Completed hands-on certification courses: metal lathe, wood lathe, milling machine, CNC machining, shears, roll breaks, laser engraving",
+   "skills": [
+    "CNC",
+    "machining",
+    "CAD/CAM"
+   ]
+  },
+  {
+   "id": "FAB-03",
+   "employer_id": "OTHER_FAB",
+   "theme": "Scare for a Cure volunteer (ongoing)",
+   "projects": [],
+   "text": "Design and fabricate large-scale interactive installations including functional high-striker and decorative ballista using metalworking and woodworking techniques",
+   "skills": [
+    "fabrication",
+    "volunteer coordination",
+    "training"
+   ]
+  },
+  {
+   "id": "FAB-04",
+   "employer_id": "OTHER_FAB",
+   "theme": "Personal workshop (ongoing)",
+   "projects": [],
+   "text": "Operate personal fabrication shop with oxy-acetylene torch, MIG welder, miter saw, band saw, bench grinders, and belt sanders",
+   "skills": [
+    "welding",
+    "woodworking",
+    "fabrication"
+   ]
+  },
+  {
+   "id": "FAB-05",
+   "employer_id": "OTHER_FAB",
+   "theme": "Jewelry & fine metalwork (1999–2003)",
+   "projects": [],
+   "text": "Developed precision metalworking skills: soldering, casting, raising, chasing, and engraving with precious and non-ferrous metals",
+   "skills": [
+    "metalsmithing",
+    "jewelry"
+   ]
+  },
+  {
+   "id": "EM-03",
+   "employer_id": "EMERSON",
+   "theme": "Stakeholder interviews (2012)",
+   "projects": [
+    "P-UIG"
+   ],
+   "text": "Interviewed 24 stakeholders across development, design, marketing, and test teams at four sites to define what each group needed from UI guidelines and why past efforts had stalled.",
+   "skills": [
+    "stakeholder interviews",
+    "research design",
+    "qualitative research"
+   ]
+  },
+  {
+   "id": "EM-04",
+   "employer_id": "EMERSON",
+   "theme": "Qualitative coding & synthesis (2012)",
+   "projects": [
+    "P-UIG"
+   ],
+   "text": "Coded interview data in RQDA (~300 segments, ~90 codes) and affinity-mapped themes into content, delivery, and process requirements.",
+   "skills": [
+    "qualitative coding",
+    "RQDA",
+    "affinity mapping",
+    "synthesis"
+   ]
+  },
+  {
+   "id": "EM-05",
+   "employer_id": "EMERSON",
+   "theme": "Guideline content model (2012)",
+   "projects": [
+    "P-UIG"
+   ],
+   "text": "Designed the content model for a UI guideline library: a base schema with Control, Behavior, Concept, and Dialog types sharing facets for usage, keyboard input, accessibility, and localization.",
+   "skills": [
+    "content modeling",
+    "information architecture",
+    "taxonomy",
+    "governance"
+   ]
+  },
+  {
+   "id": "EM-06",
+   "employer_id": "EMERSON",
+   "theme": "Structured authoring: DITA & XML (2012)",
+   "projects": [
+    "P-UIG"
+   ],
+   "text": "Specialized DITA and wrote XML schemas so guidance could be authored as small, reusable answers and published to multiple formats from one source.",
+   "skills": [
+    "DITA",
+    "XML Schema",
+    "structured content",
+    "content reuse"
+   ]
+  },
+  {
+   "id": "EM-07",
+   "employer_id": "EMERSON",
+   "theme": "Guideline library build (2012)",
+   "projects": [
+    "P-UIG"
+   ],
+   "text": "Wrote 18 control guideline pages for a SharePoint wiki and drafted 40+ more control, behavior, and concept topics, each with usage criteria and keyboard behavior.",
+   "skills": [
+    "technical writing",
+    "SharePoint",
+    "UI guidelines",
+    "design systems"
+   ]
+  },
+  {
+   "id": "EM-08",
+   "employer_id": "EMERSON",
+   "theme": "Project scoping & communication (2012)",
+   "projects": [
+    "P-UIG"
+   ],
+   "text": "Scoped and presented the project — an MLIS Professional Experience proposal and a fall 2012 poster — with weekly status reports to the design manager.",
+   "skills": [
+    "project scoping",
+    "presentation",
+    "stakeholder communication"
+   ]
+  },
+  {
+   "id": "MLIS-01",
+   "employer_id": "MLIS",
+   "theme": "Descriptive metadata schema (coursework)",
+   "projects": [],
+   "text": "Designed a descriptive metadata schema and controlled vocabulary for metalsmithing techniques, then classified sample techniques and documented where the schema broke down.",
+   "skills": [
+    "metadata schema design",
+    "controlled vocabulary",
+    "classification",
+    "critical reflection"
+   ]
+  },
+  {
+   "id": "EM-09",
+   "employer_id": "EMERSON",
+   "theme": "Problem diagnosis (2012)",
+   "projects": [
+    "P-UIG"
+   ],
+   "text": "Identified that keeping UI guidance current mattered as much as writing it, and proposed a contributor-driven content model so teams could add and update guidance themselves.",
+   "skills": [
+    "problem framing",
+    "content strategy",
+    "structured content",
+    "governance",
+    "stakeholder communication"
+   ]
+  }
+ ],
+ "projects": [
+  {
+   "id": "P-EDW",
+   "name": "Enterprise Data Discovery Platform (EDW portal)",
+   "employer": "GM"
+  },
+  {
+   "id": "P-DSO",
+   "name": "DevSecOps Compliance / Deployment Gatekeeping Platform",
+   "employer": "GM"
+  },
+  {
+   "id": "P-RESCUE",
+   "name": "Stalled vehicle-sales incentive project (the 'six-month impasse')",
+   "employer": "GM"
+  },
+  {
+   "id": "P-FC",
+   "name": "Product Resource Forecasting",
+   "employer": "GM"
+  },
+  {
+   "id": "P-DREAMS",
+   "name": "DREAMS — data science model management / execution platform",
+   "employer": "GM"
+  },
+  {
+   "id": "P-CMS",
+   "name": "Developer documentation CMS",
+   "employer": "GM"
+  },
+  {
+   "id": "P-GIS",
+   "name": "GIS visualization for EV charging network expansion",
+   "employer": "GM"
+  },
+  {
+   "id": "P-D365",
+   "name": "Microsoft Dynamics 365 redesign for international dealership sales",
+   "employer": "GM"
+  },
+  {
+   "id": "P-SEATBELT",
+   "name": "Accessible seat-belt connector (physical product)",
+   "employer": "GM"
+  },
+  {
+   "id": "P-LAW",
+   "name": "Law-firm Power Platform automation",
+   "employer": "FREELANCE"
+  },
+  {
+   "id": "P-UIG",
+   "name": "Emerson UI Guidelines library (2012)",
+   "employer": "EMERSON"
+  }
+ ],
+ "summary": {
+  "headline": "Senior UX Designer & Information Architect",
+  "text": "UX Designer and Information Architect with 12+ years designing complex enterprise systems. Strong foundation in IT infrastructure (10 years) combined with expertise in user experience, information architecture, and metadata governance. Proven ability to translate business requirements into scalable solutions that prevent costly rework. Specialized in designing intuitive systems for large organizations where \"shared vocabulary doesn't mean shared meaning\" is the core problem to solve. MLIS from UT Austin."
+ },
+ "skill_blocks": [
+  {
+   "category": "Core Competencies",
+   "items": [
+    "Information Architecture",
+    "User Experience Design",
+    "Metadata Governance",
+    "Taxonomy & Ontology Development",
+    "User Research & Testing",
+    "Requirements Gathering",
+    "User Stories",
+    "Stakeholder Management",
+    "Agile/Scrum",
+    "WCAG Accessibility",
+    "Wireframing & Prototyping",
+    "Figma",
+    "Axure",
+    "Power Platform",
+    "Information Systems",
+    "Database Tools",
+    "Workshop Facilitation"
+   ]
+  }
+ ],
+ "education": [
+  {
+   "degree": "Master of Library and Information Science (MLIS)",
+   "school": "University of Texas at Austin",
+   "location": "Austin, TX"
+  },
+  {
+   "degree": "Bachelor of Arts (BA) in Psychology, Minor in Jewelry & Metalsmithing",
+   "school": "University of North Texas",
+   "location": "Denton, TX"
+  }
+ ],
+ "publications": [
+  {
+   "citation": "Huba, N. & Zhang, Y. (2012). Designing Patient-Centered Personal Health Records (PHRs): Health Care Professionals' Perspective on Patient-Generated Data. Journal of Medical Systems, 36(6), 3893–3905."
+  }
+ ]
+}
