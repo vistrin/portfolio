@@ -76,7 +76,8 @@ body > nav .wrap {
 }
 .nav-name {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 1.1rem 0;
   font-family: "DM Serif Display", serif;
   font-size: 1.1rem;
@@ -84,6 +85,18 @@ body > nav .wrap {
 }
 .nav-name:hover {
   text-decoration: none;
+}
+.nav-name-text {
+  line-height: 1.2;
+}
+.nav-role {
+  font-family: "Inter", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+  margin-top: 0.15rem;
 }
 /* Each top-level item fills the bar's full height so the whole tab is clickable. */
 .nav-links {
@@ -195,15 +208,7 @@ body > nav .wrap {
 }
 
 .hero {
-  padding: 4rem 0 1rem;
-}
-.hero-eyebrow {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent-text);
-  margin-bottom: 0.6rem;
+  padding: 3.5rem 0 1rem;
 }
 .hero h1 {
   font-family: "DM Serif Display", serif;
@@ -245,19 +250,6 @@ body > nav .wrap {
 }
 .hero-thesis > p:last-child {
   font-size: 1.1rem;
-}
-.hero-meta {
-  display: flex;
-  gap: 0.35rem 1.75rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.75rem;
-}
-.hero-meta span {
-  font-size: 0.8rem;
-  color: var(--ink-3);
-}
-.hero-meta strong {
-  color: var(--ink-2);
 }
 
 .section-label {
@@ -662,11 +654,6 @@ footer {
   font-size: 1.4rem;
   line-height: 1.2;
 }
-.footer-role {
-  font-size: 0.875rem;
-  color: var(--ink-2);
-  margin-top: 0.2rem;
-}
 .footer-contact {
   font-size: 0.875rem;
   line-height: 1.8;
@@ -826,10 +813,6 @@ footer {
   }
   .footer-contact {
     text-align: left;
-  }
-  .hero-meta {
-    flex-direction: column;
-    gap: 0.2rem;
   }
   .hero-thesis {
     font-size: 0.95rem;
