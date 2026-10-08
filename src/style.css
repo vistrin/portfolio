@@ -656,14 +656,17 @@ footer {
   line-height: 1.2;
 }
 .footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin-top: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.8;
-  text-align: right;
 }
 .updated {
   font-size: 0.75rem;
+  line-height: 1.8;
   color: var(--ink-3);
-  margin-top: 1.5rem;
 }
 
 .resume-summary {
@@ -811,9 +814,6 @@ footer {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
-  }
-  .footer-contact {
-    text-align: left;
   }
   .hero-thesis {
     font-size: 0.95rem;
