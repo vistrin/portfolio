@@ -17,7 +17,8 @@ Pushing to `main` publishes the site. GitHub Actions runs the build and deploys 
 | To change… | Edit |
 | --- | --- |
 | A case study's text, card, tags, or facts | `src/case-studies/<name>.md` |
-| Home page hero, Approach, skills list, page description | `src/index.md` |
+| Home page hero and page description | `src/index.md` |
+| Approach page and skills list | `src/approach.md` |
 | Experience page wording, titles, dates | career-db, then re-export `data/site.json` (see below) |
 | Which entries show on the Experience page, and their groups | `data/experience_layout.json` |
 | A diagram | `src/_includes/diagrams/<name>.svg` |

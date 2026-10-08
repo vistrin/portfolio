@@ -1,0 +1,26 @@
+---
+layout: layouts/base.liquid
+---
+
+  <section class="case-section" aria-labelledby="approach-title">
+    <div class="wrap">
+      <div class="cs-header">
+        <h1 class="cs-title" id="approach-title">{{ title | md }}</h1>
+      </div>
+      <div class="process-grid">
+        <div>
+{%- for item in approach %}
+          <div class="process-item"><h2>{{ item[0] | md }}</h2><p>{{ item[1] | md }}</p></div>
+{%- endfor %}
+        </div>
+        <div>
+          <h2 class="cs-col-label">{{ skills_label | md }}</h2>
+          <ul class="skills-list">
+{%- for skill in skills %}
+            <li>{{ skill | md }}</li>
+{%- endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>

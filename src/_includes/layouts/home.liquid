@@ -15,6 +15,7 @@ layout: layouts/base.liquid
         </ul>
         <p>{{ hero.closing | md }}</p>
       </div>
+      <p class="hero-more"><a href="approach.html">{{ hero.more_link | md }}</a></p>
     </div>
   </section>
   <section class="cards-section" aria-labelledby="cs-heading">
@@ -34,23 +35,3 @@ layout: layouts/base.liquid
     </div>
   </section>
 
-  <section class="process-section" id="process" aria-labelledby="process-title">
-    <div class="wrap">
-      <h2 class="section-label" id="process-title">Approach</h2>
-      <div class="process-grid">
-        <div>
-{%- for item in approach %}
-          <div class="process-item"><h3>{{ item[0] | md }}</h3><p>{{ item[1] | md }}</p></div>
-{%- endfor %}
-        </div>
-        <div>
-          <div class="cs-col-label">{{ skills_label | md }}</div>
-          <ul class="skills-list">
-{%- for skill in skills %}
-            <li>{{ skill | md }}</li>
-{%- endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
