@@ -1,0 +1,16 @@
+---
+# The Experience page. Its text comes from data/site.json (exported from career-db) and
+# data/experience_layout.json (which entries show, in which groups). See CONTENT.md.
+layout: layouts/base.liquid
+permalink: experience.html
+title: Experience
+description: >-
+  Resume of Nicholas Huba, information architect: 12+ years of enterprise taxonomy, metadata, and
+  structured content work, most recently at General Motors IT and as a freelance consultant.
+---
+
+  <section class="case-section" aria-labelledby="resume-title">
+    <div class="wrap">
+{% experience career, experienceLayout %}
+    </div>
+  </section>

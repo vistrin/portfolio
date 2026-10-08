@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 350" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="edw-t edw-d">
+  <title id="edw-t">360 data model and catalog entry</title>
+  <desc id="edw-d">A vehicle identity table sits at the center with four dependent segments: vehicle to plant, vehicle to customer, vehicle to part, and vehicle to cost. A second panel lists the fields each portal catalog entry carried: name, publication date and refresh schedule, author, source data, business process, what the asset can and cannot answer alone, and access tier.</desc>
+  <defs><marker id="ah1" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#4A6FA5"/></marker></defs>
+
+  <text x="235" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#666" letter-spacing="1">DATA MODEL: 360 SEGMENTS</text>
+  <text x="645" y="16" text-anchor="middle" font-size="10" font-weight="600" fill="#666" letter-spacing="1">METADATA: EVERY ASSET</text>
+
+  <rect x="165" y="147" width="140" height="60" rx="5" fill="#4A6FA5"/>
+  <text x="235" y="172" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Vehicle identity</text>
+  <text x="235" y="190" text-anchor="middle" fill="#F4F7FB" font-size="10">shared identifying columns</text>
+
+  <rect x="165" y="34" width="140" height="56" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+  <text x="235" y="67" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Vehicle → Plant</text>
+  <rect x="165" y="264" width="140" height="56" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+  <text x="235" y="297" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Vehicle → Cost</text>
+  <rect x="8" y="149" width="130" height="56" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+  <text x="73" y="182" text-anchor="middle" fill="#2A4A7A" font-size="11.5" font-weight="600">Vehicle → Customer</text>
+  <rect x="332" y="149" width="130" height="56" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+  <text x="397" y="182" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Vehicle → Part</text>
+
+  <line x1="235" y1="147" x2="235" y2="93" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah1)"/>
+  <line x1="235" y1="207" x2="235" y2="261" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah1)"/>
+  <line x1="165" y1="177" x2="141" y2="177" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah1)"/>
+  <line x1="305" y1="177" x2="329" y2="177" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah1)"/>
+  <text x="235" y="342" text-anchor="middle" font-size="10.5" fill="#666">Every segment depends on the identity table.</text>
+
+  <rect x="500" y="34" width="290" height="286" rx="5" fill="#F7F7F5" stroke="#E2E2DE"/>
+  <text x="520" y="62" font-size="13" font-weight="600" fill="#111">Catalog entry</text>
+  <text x="520" y="80" font-size="10" fill="#666">Described for every report and dataset</text>
+  <g font-size="11.5" fill="#444">
+    <text x="520" y="112">· Name</text>
+    <text x="520" y="138">· Publication date and refresh schedule</text>
+    <text x="520" y="164">· Author</text>
+    <text x="520" y="190">· Source data</text>
+    <text x="520" y="216">· Business process</text>
+    <text x="520" y="242">· What it can answer, and what it can’t alone</text>
+    <text x="520" y="268">· Access tier</text>
+  </g>
+</svg>

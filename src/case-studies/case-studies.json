@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/case-study.liquid",
+  "permalink": "{{ page.fileSlug }}.html"
+}

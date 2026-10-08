@@ -1,0 +1,97 @@
+---
+layout: layouts/base.liquid
+---
+{%- if title_id %}{% assign titleId = title_id %}{% else %}{% assign titleId = anchor | append: "-title" %}{% endif -%}
+{%- if career_ids -%}
+<!-- career: {{ career_ids }} -->
+{%- endif %}
+
+  <section class="case-section" id="{{ anchor }}" aria-labelledby="{{ titleId }}">
+    <div class="wrap">
+      {% capture notice %}{% include "partials/confidentiality.liquid" %}{% endcapture %}{{ notice | rstrip }}
+      <div class="cs-header">
+        <div class="cs-num">Case study {{ num }}</div>
+        <h1 class="cs-title" id="{{ titleId }}">{{ title | md }}</h1>
+        <div class="cs-sub">{{ subtitle | md }}</div>
+      </div>
+
+      <dl class="meta">
+{%- for fact in facts %}
+        <div><dt>{{ fact[0] | md }}</dt><dd>{{ fact[1] | md }}</dd></div>
+{%- endfor %}
+      </dl>
+
+      <div class="story">
+{%- for block in story %}
+        <div class="story-block">
+          <h2 class="story-label">{{ block[0] | md }}</h2>
+{%- for p in block[1] %}
+          <p>{{ p | md }}</p>
+{%- endfor %}
+        </div>
+{%- endfor %}
+      </div>
+{%- for s in sections %}
+{% if s.heading %}
+      <h2 class="subhead">{{ s.heading | md }}</h2>
+{%- endif %}
+{%- for p in s.paragraphs %}
+      <p class="prose">{{ p | md }}</p>
+{%- endfor %}
+{%- if s.steps %}
+      <ol class="flow" aria-label="{{ s.steps_label | attr }}">
+{%- for step in s.steps %}
+        <li><strong>{{ step[0] | md }}</strong><span>{{ step[1] | md }}</span></li>
+{%- endfor %}
+      </ol>
+{%- endif %}
+{%- if s.table %}
+      <table class="gloss">
+        <caption>{{ s.table.caption | md }}</caption>
+        <thead><tr>{% for col in s.table.columns %}<th scope="col">{{ col | md }}</th>{% endfor %}</tr></thead>
+        <tbody>
+{%- for row in s.table.rows %}
+          <tr>{% for cell in row %}<td>{{ cell | md }}</td>{% endfor %}</tr>
+{%- endfor %}
+        </tbody>
+      </table>
+{%- endif %}
+{%- if s.note %}
+      <p class="note">{{ s.note | md }}</p>
+{%- endif %}
+{%- endfor %}
+{%- if diagram %}
+
+      <div class="diagram-wrap">
+        <div class="diagram-label">{{ diagram.label | md }}</div>
+        <div class="diagram-scroll">
+        {% diagram diagram.file %}
+        </div>
+        <div class="insight-box">
+          <div class="label">{{ diagram.insight_label | md }}</div>
+          <p>{{ diagram.insight | md }}</p>
+        </div>
+      </div>
+{%- endif %}
+{%- if depth %}
+
+      <details class="depth">
+        <summary>{{ depth.summary | md }}</summary>
+        <div class="depth-body">
+{%- for part in depth.parts %}
+          <h3>{{ part[0] | md }}</h3>
+{%- for p in part[1] %}
+          <p>{{ p | md }}</p>
+{%- endfor %}
+{%- endfor %}
+        </div>
+      </details>
+{%- endif %}
+{%- assign next = collections.caseStudies | nextCase: page.url %}
+
+      <nav class="case-pager" aria-label="Case studies">
+        <a href="index.html#case-studies">← All case studies</a>
+        <a href="{{ next.url | rel }}">Next: {{ next.data.title | md }} →</a>
+      </nav>
+    </div>
+  </section>

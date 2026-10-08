@@ -1,0 +1,24 @@
+{%- if page.url == "/" %}{% assign home = "" %}{% else %}{% assign home = "index.html" %}{% endif -%}
+{%- assign workCurrent = false %}{% for cs in collections.caseStudies %}{% if cs.url == page.url %}{% assign workCurrent = true %}{% endif %}{% endfor -%}
+<nav aria-label="Primary">
+  <div class="wrap">
+    <a class="nav-name" href="index.html">
+      <span class="nav-name-text">{{ career.profile.name | esc }}</span>
+      <span class="nav-role">UX Designer &amp; Information Architect</span>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-menu">
+        <button type="button" class="nav-menu-btn{% if workCurrent %} is-current{% endif %}" aria-expanded="false" aria-controls="work-menu">Work</button>
+        <ul class="nav-dropdown" id="work-menu">
+{%- for cs in collections.caseStudies %}
+          <li><a href="{{ cs.url | rel }}"{% if cs.url == page.url %} aria-current="page"{% endif %}><span class="nav-dropdown-num">Case study {{ cs.data.num }}</span>{{ cs.data.title | md }}</a></li>
+{%- endfor %}
+          <li class="nav-dropdown-all"><a href="{{ home }}#case-studies">All case studies</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ home }}#process">Approach</a></li>
+      <li><a href="experience.html"{% if page.url == "/experience.html" %} aria-current="page"{% endif %}>Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>

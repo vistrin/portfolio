@@ -1,0 +1,15 @@
+{%- assign p = career.profile -%}
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-name">{{ p.name | esc }}</div>
+      </div>
+      <p class="footer-contact">
+        <a href="mailto:{{ p.email | esc }}">{{ p.email | esc }}</a><br>
+        <a href="https://www.{{ p.linkedin | esc }}" target="_blank" rel="noopener">{{ p.linkedin | esc }}</a>
+      </p>
+    </div>
+    <p class="updated">Last updated {{ buildDate }}</p>
+  </div>
+</footer>

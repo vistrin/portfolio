@@ -27,19 +27,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build shared and data-driven page sections
-        run: python3 build.py
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
 
-      - name: Set last updated date
-        run: |
-          DATE=$(date +'%B %Y')
-          sed -i "s|LAST_UPDATED_PLACEHOLDER|$DATE|g" *.html
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Collect site files
-        run: |
-          rsync -a ./ _site/ \
-            --exclude '.git*' --exclude '.github' --exclude '.vscode' \
-            --exclude '.githooks' --exclude '_partials' --exclude 'data' --exclude 'build.py' --exclude '_site'
+      # Builds src/ into _site/. Every page's "Last updated" is the build month.
+      - name: Build site
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

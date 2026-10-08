@@ -1,5 +1,5 @@
 {
- "_note": "Which approved career-db entries appear on experience.html, grouped under each job. Titles, dates, and bullet wording come from site.json; edit them in career-db, not here. Set \"org\": null to hide the employer line. Run `python build.py` after editing.",
+ "_note": "Which approved career-db entries appear on experience.html, grouped under each job. Titles, dates, and bullet wording come from site.json; edit them in career-db, not here. Set \"org\": null to hide the employer line. Rebuild with `npm run build` (or keep `npm start` running) after editing.",
  "jobs": [
   {
    "employer": "FREELANCE",
