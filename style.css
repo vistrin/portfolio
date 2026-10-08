@@ -11,11 +11,11 @@
   --surface: #ffffff;
   --ink: #111111;
   --ink-2: #444444;
-  --ink-3: #6b6b6b;
+  --ink-3: #636363;   /* was #6b6b6b */
   --accent: #4a6fa5;
   --accent-text: #3d5f94;
   --accent-light: #eaf0f8;
-  --rule: #d8dadf;
+  --rule: #b4b8c0;    /* was #d8dadf */
   --radius: 6px;
   --max: 880px;
 }
@@ -329,6 +329,7 @@ body > nav .wrap {
   font-size: 0.7rem;
   font-weight: 500;
   padding: 0.25rem 0.6rem;
+  border: 1px solid #6f8bb6;
   border-radius: 3px;
   background: var(--accent-light);
   color: var(--accent-text);
