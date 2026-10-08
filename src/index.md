@@ -4,7 +4,7 @@ layout: layouts/home.liquid
 permalink: index.html
 page_title: Nicholas Huba — Information Architect
 description: >-
-  Information architect and content strategist. Three enterprise case studies on data discovery,
+  Information architect and content strategist. Four enterprise case studies on data discovery,
   deployment compliance, and scenario modeling, each starting from what was asked and what the
   problem actually was.
 

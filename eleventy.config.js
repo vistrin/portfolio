@@ -28,10 +28,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("esc", escape);
   // Site links are relative ("devsecops.html", not "/devsecops.html") so the site works under any base path.
   eleventyConfig.addFilter("rel", (url) => (url === "/" ? "index.html" : url.replace(/^\//, "")));
-  eleventyConfig.addFilter("nextCase", (all, url) => {
-    const i = all.findIndex((c) => c.url === url);
-    return all[(i + 1) % all.length];
-  });
+  // The case study after this one; none after the last.
+  eleventyConfig.addFilter("nextCase", (all, url) => all[all.findIndex((c) => c.url === url) + 1]);
 
   // {% diagram "edw.svg" %}: inlines src/_includes/diagrams/edw.svg, indented to sit inside the page.
   eleventyConfig.addShortcode("diagram", (file) =>

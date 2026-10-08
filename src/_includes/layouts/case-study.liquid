@@ -91,7 +91,9 @@ layout: layouts/base.liquid
 
       <nav class="case-pager" aria-label="Case studies">
         <a href="index.html#case-studies">← All case studies</a>
+{%- if next %}
         <a href="{{ next.url | rel }}">Next: {{ next.data.title | md }} →</a>
+{%- endif %}
       </nav>
     </div>
   </section>

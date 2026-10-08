@@ -45,7 +45,7 @@ Content files are YAML between the `---` lines. A few rules cover almost everyth
 
 ## Case study fields
 
-Each file in `src/case-studies/` is one case study. Its file name becomes the URL (`devsecops.md` → `devsecops.html`). The `num` field sets the order everywhere: home page cards, the Work menu, and each page's "Next" link, which wraps from the last case study back to the first.
+Each file in `src/case-studies/` is one case study. Its file name becomes the URL (`devsecops.md` → `devsecops.html`). The `num` field sets the order everywhere: home page cards, the Work menu, and each page's "Next" link. The last case study has no Next link, only "All case studies".
 
 ```yaml
 num: "02"                     # quoted, so it stays "02" and not 2

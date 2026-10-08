@@ -1,0 +1,42 @@
+<svg viewBox="0 0 800 340" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="inc-t inc-d">
+  <title id="inc-t">Monthly scenario loop with lineage</title>
+  <desc id="inc-d">A model and input data feed a run. Each run produces a scenario set of around a hundred scenarios. The analyst selects one as the recommended scenario, which a person can then edit into an adjusted scenario; adjusted scenarios are tracked separately. Every scenario records its lineage: which data and which model. The recommended scenario plus actual results become next month's input data, which feeds the next run.</desc>
+  <defs><marker id="ah4" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#4A6FA5"/></marker></defs>
+
+  <rect x="10" y="54" width="170" height="56" rx="5" fill="#4A6FA5"/>
+  <text x="95" y="78" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Model</text>
+  <text x="95" y="96" text-anchor="middle" fill="#F4F7FB" font-size="10">machine-learning model</text>
+  <rect x="10" y="174" width="170" height="56" rx="5" fill="#4A6FA5"/>
+  <text x="95" y="198" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Input data</text>
+  <text x="95" y="216" text-anchor="middle" fill="#F4F7FB" font-size="10">the data the model runs on</text>
+
+  <line x1="180" y1="82" x2="248" y2="130" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah4)"/>
+  <line x1="180" y1="202" x2="248" y2="154" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah4)"/>
+
+  <rect x="250" y="104" width="110" height="76" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+  <text x="305" y="146" text-anchor="middle" fill="#2A4A7A" font-size="13" font-weight="600">Run</text>
+  <line x1="360" y1="142" x2="418" y2="142" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah4)"/>
+
+  <rect x="420" y="104" width="140" height="76" rx="5" fill="#4A6FA5"/>
+  <text x="490" y="134" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Scenario set</text>
+  <text x="490" y="152" text-anchor="middle" fill="#F4F7FB" font-size="10">around a hundred</text>
+  <text x="490" y="166" text-anchor="middle" fill="#F4F7FB" font-size="10">per run</text>
+
+  <line x1="560" y1="124" x2="618" y2="72" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah4)"/>
+  <rect x="620" y="34" width="170" height="56" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+  <text x="705" y="58" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Recommended scenario</text>
+  <text x="705" y="76" text-anchor="middle" fill="#3D5F94" font-size="10">selected by the analyst</text>
+  <line x1="705" y1="90" x2="705" y2="131" stroke="#4A6FA5" stroke-width="1.5" marker-end="url(#ah4)"/>
+  <rect x="620" y="134" width="170" height="64" rx="5" fill="#EAF0F8" stroke="#4A6FA5"/>
+  <text x="705" y="155" text-anchor="middle" fill="#2A4A7A" font-size="12" font-weight="600">Adjusted scenario</text>
+  <text x="705" y="171" text-anchor="middle" fill="#3D5F94" font-size="10">edited by a person;</text>
+  <text x="705" y="185" text-anchor="middle" fill="#3D5F94" font-size="10">tracked separately</text>
+
+  <line x1="490" y1="180" x2="490" y2="212" stroke="#888" stroke-width="1" stroke-dasharray="3 2"/>
+  <rect x="250" y="214" width="310" height="50" rx="4" fill="none" stroke="#888" stroke-dasharray="4 3"/>
+  <text x="405" y="235" text-anchor="middle" fill="#333" font-size="11" font-weight="600">Every scenario records its lineage:</text>
+  <text x="405" y="252" text-anchor="middle" fill="#555" font-size="10.5">which data · which model</text>
+
+  <path d="M705,198 L705,298 L95,298 L95,234" fill="none" stroke="#4A6FA5" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#ah4)"/>
+  <text x="400" y="320" text-anchor="middle" fill="#444" font-size="10.5">The recommended scenario plus actual results become next month’s input data.</text>
+</svg>
